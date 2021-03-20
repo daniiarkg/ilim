@@ -1,5 +1,4 @@
 import logging
-from ilim.storage import *
 
 numb_s_case_dict_list = {
     1 : '',
