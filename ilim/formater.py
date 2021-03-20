@@ -246,7 +246,7 @@ def make_case(request):
         r_1_2 = request[0][-1] in vowl
         if request[0][-1] in 'гГ' and num_case == 2:
             request[0] = request[0][:-1] + 'к'
-        need_sog = 'н' if r_1_2 and num_case == 1 else 'г' if request[0][-1] in g_cons + vowl and num_case == 2 else 'к' if request[0][-1] in g_cons and num_case == 2 else 'д' if request[0][-1] in z_cons + vowl else 'т' 
+        need_sog = 'н' if r_1_2 and num_case == 1 else 'г' if request[0][-1] in z_cons + vowl and num_case == 2 else 'к' if request[0][-1] in g_cons and num_case == 2 else 'д' if request[0][-1] in z_cons + vowl else 'т' 
         check_let = request[0][-1] if r_1_2 else request[0][-2]
         for i in case_dict_list[num_case - 1]:
             if check_let in i:
