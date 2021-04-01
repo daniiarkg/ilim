@@ -12,7 +12,7 @@ setup(
   keywords = ['Grammar', 'Formatter', 'Grammar formatter', 'Library'],   
   install_requires=[],
   classifiers=[
-    'Development Status :: 5 - Alpha',      
+    'Development Status :: 5 - Stable',      
     'Intended Audience :: Developers',      
     'Topic :: Software Development :: Build Tools',
     'License :: OSI Approved :: MIT License',   
