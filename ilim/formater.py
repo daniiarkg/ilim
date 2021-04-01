@@ -100,10 +100,3 @@ def make_format(got_request, route):
         return router[request[1][:3]](request)
     except:
         logging.critical('Something went wrong! Check your route or func call!')
-
-
-if __name__ == "__main__":
-    import sys
-    requestConsole = sys.argv[1:]
-    if len(requestConsole) != 2 : logging.critical('Something went wrong! Check your route or func call!')
-    print(make_format(requestConsole[0], requestConsole[1]))
